@@ -8,16 +8,6 @@
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white)
 [![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B)](https://www.streamlit.io/)
 
-## Table of Contents
-
-- [Demo](#demo)
-- [Overview](#overview)
-- [About the Dataset](#about-the-dataset)
-- [Installation](#installation)
-- [Deployement on Streamlit](#deployement-on-streamlit)
-- [Directory Tree](#directory-tree)
-- [Bug / Feature Request](#bug--feature-request)
-- [Future Scope](#future-scope)
 
 ## Demo
 
@@ -55,55 +45,7 @@ Download the dataset from [Kaggle](https://www.kaggle.com/adityajn105/flickr8k) 
     - (image files)
   - captions.txt
 
-## Installation
 
-This project is written in Python 3.10.12. If you don't have Python installed, you can download it from the [official website](https://www.python.org/downloads/). If you have an older version of Python, you can upgrade it using the pip package manager, which should be already installed if you have Python 2 >=2.7.9 or Python 3 >=3.4 on your system.
-To install the required packages and libraries, you can use pip and the provided requirements.txt file. First, clone this repository to your local machine using the following command:
-```
-https://github.com/Sajid030/image-caption-generator.git
-```
-Once you have cloned the repository, navigate to the project directory and run the following command in your terminal or command prompt:
-```bash
-pip install -r requirements.txt
-```
-This will install all the necessary packages and libraries needed to run the project.
-
-## Deployement on Streamlit
-
-1. Create an account on Streamlit Sharing.
-2. Fork this repository to your GitHub account.
-3. Log in to Streamlit Sharing and create a new app.
-4. Connect your GitHub account to Streamlit Sharing and select this repository.
-5. Set the following configuration variables in the Streamlit Sharing dashboard:
-```
-[server]
-headless = true
-port = $PORT
-enableCORS = false
-```
-6. Click on "Deploy app" to deploy the app on Streamlit Sharing.
-
-## Directory Tree
-
-```
-|   app.py
-|   image-captioner.ipynb
-|   LICENSE.md
-|   mymodel.h5
-|   README.md
-|   requirements.txt
-|   tokenizer.pkl
-\---resource
-        demo.gif
-```
-
-## Bug / Feature Request
-
-If you encounter any bugs or issues with the loan status predictor app, please let me know by opening an issue on my [GitHub repository](https://github.com/Sajid030/image-captioning/issues). Be sure to include the details of your query and the expected results. Your feedback is valuable in helping me improve the app for all users. Thank you for your support!
-
-## Future Scope
-
-1. **Fine-tuning**: Experiment with fine-tuning the captioning model architecture and hyperparameters for improved performance.
 2. **Dataset Expansion**: Incorporate additional datasets to increase the diversity and complexity of the trained model for example we can train the model on [Flickr30k dataset](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset).
 3. **Beam Search**: Implement beam search decoding for generating multiple captions and selecting the best one.
 4. **User Interface Enhancements**: Improve the Streamlit app's user interface and add features such as image previews and caption confidence scores.
